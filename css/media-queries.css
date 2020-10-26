@@ -1,0 +1,77 @@
+@media only screen and (max-width: 768px) {
+  [cols*="column-"] {
+    width: 100%;
+  }
+  .header__bodyRight {
+    /* width: 100%; */
+    height: 50%;
+  }
+  .header__body {
+    display: block;
+  }
+  .header__bodyLeft {
+    line-height: 50px;
+    height: 50%;
+  }
+  .header__bodyLeft > h1 {
+    font-size: 3rem;
+  }
+  .header__bodyLeft > p {
+    font-size: 1rem;
+  }
+  .social > a > i {
+    font-size: 1.5rem;
+  }
+  .header__button {
+    display: none;
+  }
+
+  /* ABOUT */
+
+  .row {
+    display: grid;
+    place-items: center;
+    width: 460px;
+  }
+  .about__image {
+    margin-bottom: 15px;
+  }
+  .about__info {
+    text-align: center;
+  }
+  .about__innerInfo {
+    display: block;
+  }
+  .about__contactDetails,
+  .about__address {
+    margin-bottom: 55px;
+  }
+
+  /* RESUME */
+
+  .resume__details {
+    margin-bottom: 35px;
+  }
+  .resume__info {
+    text-align: center;
+  }
+  .bars {
+    display: block;
+    width: 100%;
+  }
+
+  .bars .skills {
+    margin-right: 0;
+    width: 100%;
+  }
+  .bars li {
+    width: 100%;
+  }
+  .bar-expand {
+    display: block;
+  }
+  /* WORKS */
+  .works__body {
+    display: block;
+  }
+}

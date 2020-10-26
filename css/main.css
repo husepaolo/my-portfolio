@@ -300,12 +300,14 @@ body {
   position: relative;
   top: -36px;
 }
+
+/* WORKS SECTION ============== */
 #works {
   background-color: #dbd7d7;
 }
 .works__body {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex; */
+  /* justify-content: space-around; */
 }
 .works__image {
   height: 200px;
