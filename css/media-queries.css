@@ -1,4 +1,58 @@
 @media only screen and (max-width: 768px) {
+  /* NAV */
+  #nav-wrap > a:first-of-type {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    background: #2b2b2b;
+    height: auto;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    width: 150px;
+    padding: 22px 0;
+  }
+
+  #nav-wrap .nav > li > a {
+    color: #fff;
+  }
+
+  .nav > li {
+    display: block;
+    width: 120px;
+  }
+  #nav-wrap > a {
+    background-color: #f95b6b;
+    height: 48px;
+    width: 48px;
+    position: relative;
+    border: none;
+    float: right;
+    top: 0;
+    right: 30px;
+  }
+  #nav-wrap > a:before {
+    border: 2px solid #fff;
+    content: " ";
+    top: 35%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+  }
+  #nav-wrap > a:after {
+    border: 2px solid #fff;
+    content: " ";
+    bottom: 35%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+  }
+  .fadeIn {
+    display: none;
+  }
+
   [cols*="column-"] {
     width: 100%;
   }
@@ -12,6 +66,7 @@
   .header__bodyLeft {
     line-height: 50px;
     height: 50%;
+    /* width: 100%; */
   }
   .header__bodyLeft > h1 {
     font-size: 3rem;
@@ -73,5 +128,25 @@
   /* WORKS */
   .works__body {
     display: block;
+  }
+
+  /* CONTACT */
+  #contact label,
+  #contact input,
+  #contact textarea {
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+
+  #contact .submit {
+    clear: both;
+    margin: 0;
+    width: 30%;
+
+    border: 1px solid red;
+  }
+  #contact-form > fieldset > div {
+    /* display: grid; */
   }
 }

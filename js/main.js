@@ -1,3 +1,11 @@
+var submit = document.querySelector(".submit");
+var conName = document.querySelector("#contactName");
+var conEmail = document.querySelector("#contactEmail");
+var conMessage = document.querySelector("#contactMessage");
+ 
+});
+if (conName === "" && contact) submit.addEventListener("click", function () {});
+
 jQuery(document).ready(function ($) {
   //
   $("header").css({ height: $(window).height() });
@@ -16,11 +24,11 @@ jQuery(document).ready(function ($) {
       nav.fadeOut("fast");
     } else {
       if (y < h * 0.2) {
-        nav.children().removeClass("fadeIn");
+        nav.removeClass("fadeIn");
         nav.fadeIn("fast");
-      } else {
-        nav.children().addClass("fadeIn").fadeIn("fast");
+      } else if ($(window).outerWidth() > 768) {
         nav.fadeIn("fast");
+        nav.addClass("fadeIn");
       }
     }
 
@@ -39,6 +47,15 @@ jQuery(document).ready(function ($) {
     //   });
     // }
   });
+
+  $(".mobile-btn").toggle(
+    function () {
+      $(".nav").css("display", "block");
+    },
+    function () {
+      $(".nav").css("display", "none");
+    }
+  );
 
   /*----------------------------------------------------*/
   /* Highlight the current section in the navigation bar
